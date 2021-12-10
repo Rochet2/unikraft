@@ -170,9 +170,9 @@ files, you should handle this with care): ::
 
   APPNAME_OBJS-y += $(APPNAME_BASE)/path_to_src/myobj.o
 
-You can also use ``APPNAME_OBJS-y`` to add pre-built libraries (as .o or .a): ::
+You can also use ``APPNAME_ALIBS-y`` to add pre-built libraries (as .o or .a): ::
 
-  APPNAME_OBJS-y += $(APPNAME_BASE)/path_to_lib/mylib.a
+  APPNAME_ALIBS-y += $(APPNAME_BASE)/path_to_lib/mylib.a
 
 Once you have specified all of your source files (and optionally binary files)
 it is generally also necessary to specify include paths and compile flags: ::
